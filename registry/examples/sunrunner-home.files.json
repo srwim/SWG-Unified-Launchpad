@@ -1,0 +1,20 @@
+{
+  "generated": "2026-06-12T00:00:00Z",
+  "files": [
+    {
+      "path": "sunrunner_main.tre",
+      "size": 48211344,
+      "sha256": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+    },
+    {
+      "path": "SWGEmu.exe",
+      "size": 6092800,
+      "sha256": "60303ae22b998861bce3b28f33eec1be758a213c86c93c076dbe9f558c11c752"
+    },
+    {
+      "path": "dpvs.dll",
+      "size": 994304,
+      "sha256": "fd61a03af4f77d870fc21e05e7e80678095c92d808cfb3b5c279ee04c74aca13"
+    }
+  ]
+}

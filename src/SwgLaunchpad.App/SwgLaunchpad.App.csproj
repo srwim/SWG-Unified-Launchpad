@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>SwgLaunchpad</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\icon.ico</ApplicationIcon>
+    <Version>1.0.0</Version>
+    <Product>SWG Unified Launchpad</Product>
+    <Company>r/swg community</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SwgLaunchpad.Core\SwgLaunchpad.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Bundled default registry: used when the online registry is unreachable. -->
+    <Content Include="..\..\registry\registry.json" Link="registry\registry.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\registry\manifests\*.json" Link="registry\manifests\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\banner.png" />
+    <Resource Include="Assets\galaxy.png" />
+    <Resource Include="Assets\logo.png" />
+    <Resource Include="Assets\background.png" />
+    <Resource Include="Assets\icon.ico" />
+  </ItemGroup>
+
+</Project>

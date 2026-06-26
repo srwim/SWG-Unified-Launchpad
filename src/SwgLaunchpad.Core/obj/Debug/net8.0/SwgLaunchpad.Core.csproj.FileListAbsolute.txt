@@ -1,0 +1,12 @@
+C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.Core\bin\Debug\net8.0\SwgLaunchpad.Core.deps.json
+C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.Core\bin\Debug\net8.0\SwgLaunchpad.Core.dll
+C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.Core\bin\Debug\net8.0\SwgLaunchpad.Core.pdb
+C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.Core\obj\Debug\net8.0\SwgLaunchpad.Core.csproj.AssemblyReference.cache
+C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.Core\obj\Debug\net8.0\SwgLaunchpad.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.Core\obj\Debug\net8.0\SwgLaunchpad.Core.AssemblyInfoInputs.cache
+C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.Core\obj\Debug\net8.0\SwgLaunchpad.Core.AssemblyInfo.cs
+C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.Core\obj\Debug\net8.0\SwgLaunchpad.Core.csproj.CoreCompileInputs.cache
+C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.Core\obj\Debug\net8.0\SwgLaunchpad.Core.dll
+C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.Core\obj\Debug\net8.0\refint\SwgLaunchpad.Core.dll
+C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.Core\obj\Debug\net8.0\SwgLaunchpad.Core.pdb
+C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.Core\obj\Debug\net8.0\ref\SwgLaunchpad.Core.dll

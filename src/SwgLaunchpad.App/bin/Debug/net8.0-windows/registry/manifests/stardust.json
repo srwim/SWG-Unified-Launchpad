@@ -1,0 +1,25 @@
+{
+  "manifestVersion": 1,
+  "serverId": "stardust",
+  "name": "Stardust 2.1",
+  "description": "Pre-CU server built on the Stardust 2 codebase. [Patch URLs pending operator claim via PR.] [Login host unverified (community convention) \u2014 operator: confirm via PR.]",
+  "era": "Pre-CU",
+  "website": "https://stardust-swg.com",
+  "discord": "https://discord.gg/6YyEmcRt",
+  "login": {
+    "host": "login.stardust-swg.com",
+    "port": 44453
+  },
+  "client": {
+    "executable": "SWGEmu.exe",
+    "arguments": "",
+    "allowMultiInstance": true
+  },
+  "files": {
+    "baseUrl": "https://patch.example.invalid/stardust/files/",
+    "fileManifestUrl": "https://patch.example.invalid/stardust/files.json"
+  },
+  "auth": {
+    "mode": "none"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "components": [
+    "Microsoft.VisualStudio.Workload.ManagedDesktop",
+    "Microsoft.NetCore.Component.Runtime.8.0",
+    "Microsoft.NetCore.Component.DevelopmentTools",
+    "Microsoft.VisualStudio.Component.NuGet",
+    "Microsoft.VisualStudio.Component.IntelliCode",
+    "Microsoft.VisualStudio.Component.Debugger.JustInTime",
+    "Microsoft.ComponentGroup.Blend",
+    "Microsoft.VisualStudio.Component.Git",
+    "Component.VisualStudio.GitHub.Copilot"
+  ]
+}

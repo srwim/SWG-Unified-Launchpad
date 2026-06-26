@@ -1,0 +1,27 @@
+{
+  "manifestVersion": 1,
+  "serverId": "swgemu-finalizer",
+  "name": "SWGEmu \u2014 Finalizer",
+  "description": "The original Star Wars Galaxies emulator project. Finalizer is the primary Pre-CU test server. Accounts are created on swgemu.com and entered at the in-game login screen. [Patch URLs pending operator claim via PR.]",
+  "era": "Pre-CU",
+  "website": "https://www.swgemu.com",
+  "discord": "https://discord.gg/JH3t7Qh",
+  "login": {
+    "host": "login.swgemu.com",
+    "port": 44453
+  },
+  "client": {
+    "executable": "SWGEmu.exe",
+    "arguments": "",
+    "allowMultiInstance": true
+  },
+  "files": {
+    "baseUrl": "https://patch.example.invalid/swgemu-finalizer/files/",
+    "fileManifestUrl": "https://patch.example.invalid/swgemu-finalizer/files.json"
+  },
+  "auth": {
+    "mode": "none",
+    "registerUrl": "https://www.swgemu.com/account/register"
+  },
+  "newsUrl": "https://www.swgemu.com/forums/external.php?type=RSS2"
+}

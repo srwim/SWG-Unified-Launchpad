@@ -1,0 +1,22 @@
+{
+  "manifestVersion": 1,
+  "serverId": "sunrunner-home",
+  "name": "Sunrunner's Home",
+  "description": "Pre-CU server with accelerated XP and custom content. Example manifest - copy this as your template.",
+  "era": "Pre-CU",
+  "website": "https://example.org",
+  "discord": "https://discord.gg/example",
+  "bannerUrl": "https://patch.example.org/banner.png",
+  "newsUrl": "https://example.org/news.rss",
+  "statusUrl": "https://login.example.org/status.xml",
+  "login": { "host": "login.example.org", "port": 44453 },
+  "client": {
+    "executable": "SWGEmu.exe",
+    "arguments": "",
+    "allowMultiInstance": true
+  },
+  "files": {
+    "baseUrl": "https://patch.example.org/files/",
+    "fileManifestUrl": "https://patch.example.org/files.json"
+  }
+}

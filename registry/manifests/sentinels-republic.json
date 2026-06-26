@@ -1,0 +1,23 @@
+{
+  "manifestVersion": 1,
+  "serverId": "sentinels-republic",
+  "name": "SWG Sentinels Republic",
+  "description": "Pre-CU server built on the SWGEmu core with a roadmap toward Jump to Lightspeed. One of the most active Pre-CU communities, with over 6,000 peak concurrent forum users.",
+  "era": "Pre-CU",
+  "website": "https://swgsremu.com",
+  "forum": "https://forum.swgsremu.com",
+  "discord": "https://forum.swgsremu.com/viewtopic.php?t=233",
+  "bannerUrl": "https://swgsremu.com/banner.png",
+  "newsUrl": "https://forum.swgsremu.com/feed.php",
+  "statusUrl": "https://login.swgsremu.com/status.json",
+  "login": { "host": "login.swgsremu.com", "port": 44453 },
+  "client": {
+    "executable": "SwgClient_r.exe",
+    "arguments": "",
+    "allowMultiInstance": false
+  },
+  "files": {
+    "baseUrl": "https://patch.swgsremu.com/files/",
+    "fileManifestUrl": "https://patch.swgsremu.com/files.json"
+  }
+}

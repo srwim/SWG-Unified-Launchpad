@@ -1,0 +1,25 @@
+{
+  "manifestVersion": 1,
+  "serverId": "swgreturns",
+  "name": "SWGReturns",
+  "description": "Community Pre-CU project. [Patch URLs pending operator claim via PR.] [Login host unverified (community convention) \u2014 operator: confirm via PR.]",
+  "era": "Pre-CU",
+  "website": "https://swgreturns.com",
+  "discord": "https://discord.gg/C3AxSTqtnP",
+  "login": {
+    "host": "login.swgreturns.com",
+    "port": 44453
+  },
+  "client": {
+    "executable": "SWGEmu.exe",
+    "arguments": "",
+    "allowMultiInstance": true
+  },
+  "files": {
+    "baseUrl": "https://patch.example.invalid/swgreturns/files/",
+    "fileManifestUrl": "https://patch.example.invalid/swgreturns/files.json"
+  },
+  "auth": {
+    "mode": "none"
+  }
+}

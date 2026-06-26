@@ -1,0 +1,27 @@
+{
+  "manifestVersion": 1,
+  "serverId": "swg-legends",
+  "name": "SWG Legends",
+  "description": "The largest NGE server. Jump to Lightspeed, expansions, and regular live events. The launcher signs in with your swglegends.com forum credentials. [Patch URLs pending operator claim via PR.] [Login host unverified (community convention) \u2014 operator: confirm via PR.]",
+  "era": "NGE",
+  "website": "https://swglegends.com",
+  "discord": "https://discord.gg/swglegends",
+  "login": {
+    "host": "login.swglegends.com",
+    "port": 44453
+  },
+  "client": {
+    "executable": "SwgClient_r.exe",
+    "arguments": "",
+    "allowMultiInstance": true
+  },
+  "files": {
+    "baseUrl": "https://patch.example.invalid/swg-legends/files/",
+    "fileManifestUrl": "https://patch.example.invalid/swg-legends/files.json"
+  },
+  "auth": {
+    "mode": "launcher",
+    "registerUrl": "https://swglegends.com/getting-started.php",
+    "passwordResetUrl": "https://support.swglegends.com/"
+  }
+}

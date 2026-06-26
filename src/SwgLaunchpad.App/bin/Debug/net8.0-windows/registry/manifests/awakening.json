@@ -1,0 +1,27 @@
+{
+  "manifestVersion": 1,
+  "serverId": "awakening",
+  "name": "SWG Awakening",
+  "description": "Pre-CU server with quality-of-life improvements, custom content, and an active events team. Open-source launcher (CycloneAwakening/SWGAwakening on GitHub). [Patch URLs pending operator claim via PR.] [Login host unverified (community convention) \u2014 operator: confirm via PR.]",
+  "era": "Pre-CU",
+  "website": "https://www.swgawakening.com",
+  "discord": "https://discord.gg/QxQSXwY",
+  "login": {
+    "host": "login.swgawakening.com",
+    "port": 44453
+  },
+  "client": {
+    "executable": "SWGEmu.exe",
+    "arguments": "",
+    "allowMultiInstance": true
+  },
+  "files": {
+    "baseUrl": "https://patch.example.invalid/awakening/files/",
+    "fileManifestUrl": "https://patch.example.invalid/awakening/files.json"
+  },
+  "auth": {
+    "mode": "none",
+    "registerUrl": "https://swgawakening.com/ucp.php?mode=register"
+  },
+  "newsUrl": "https://swgawakening.com/feed.php"
+}

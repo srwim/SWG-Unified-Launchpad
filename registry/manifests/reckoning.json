@@ -1,0 +1,26 @@
+{
+  "manifestVersion": 1,
+  "serverId": "reckoning",
+  "name": "SWG Reckoning",
+  "description": "Pre-CU server focused on a balanced, polished classic experience. [Patch URLs pending operator claim via PR.] [Login host unverified (community convention) \u2014 operator: confirm via PR.]",
+  "era": "Pre-CU",
+  "website": "https://swgreckoning.org",
+  "discord": "https://discord.com/invite/NgSWaU7V",
+  "login": {
+    "host": "login.swgreckoning.org",
+    "port": 44453
+  },
+  "client": {
+    "executable": "SWGEmu.exe",
+    "arguments": "",
+    "allowMultiInstance": true
+  },
+  "files": {
+    "baseUrl": "https://patch.example.invalid/reckoning/files/",
+    "fileManifestUrl": "https://patch.example.invalid/reckoning/files.json"
+  },
+  "auth": {
+    "mode": "none"
+  },
+  "newsUrl": "https://swgreckoning.org/feed/"
+}

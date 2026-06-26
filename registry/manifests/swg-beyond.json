@@ -1,0 +1,22 @@
+{
+  "manifestVersion": 1,
+  "serverId": "swg-beyond",
+  "name": "SWG Beyond",
+  "description": "NGE server with event-driven gameplay and a strong roleplay focus. Challenge Mode scales content beyond original NGE Heroics, and a weekly event calendar (Mustafar Monday, Tusken Tuesday) keeps the game moving for veterans.",
+  "era": "NGE",
+  "website": "https://swgbeyond.com",
+  "discord": "https://discord.gg/swgbeyond",
+  "bannerUrl": "https://swgbeyond.com/banner.png",
+  "newsUrl": "https://swgbeyond.com/forums/rss.php",
+  "statusUrl": "https://login.swgbeyond.com/status.json",
+  "login": { "host": "login.swgbeyond.com", "port": 44453 },
+  "client": {
+    "executable": "SwgClient_r.exe",
+    "arguments": "",
+    "allowMultiInstance": true
+  },
+  "files": {
+    "baseUrl": "https://patch.swgbeyond.com/files/",
+    "fileManifestUrl": "https://patch.swgbeyond.com/files.json"
+  }
+}

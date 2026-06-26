@@ -1,0 +1,26 @@
+{
+  "manifestVersion": 1,
+  "serverId": "empire-in-flames",
+  "name": "Empire in Flames",
+  "description": "Heavily customized Pre-CU: reworked professions, factional warfare, and original storytelling. [Patch URLs pending operator claim via PR.] [Login host unverified (community convention) \u2014 operator: confirm via PR.]",
+  "era": "Pre-CU",
+  "website": "https://www.empireinflames.com",
+  "discord": "https://discord.gg/uvNrseC",
+  "login": {
+    "host": "login.empireinflames.com",
+    "port": 44453
+  },
+  "client": {
+    "executable": "SWGEmu.exe",
+    "arguments": "",
+    "allowMultiInstance": true
+  },
+  "files": {
+    "baseUrl": "https://patch.example.invalid/empire-in-flames/files/",
+    "fileManifestUrl": "https://patch.example.invalid/empire-in-flames/files.json"
+  },
+  "auth": {
+    "mode": "none"
+  },
+  "newsUrl": "https://www.empireinflames.com/feed/"
+}

@@ -1,0 +1,25 @@
+{
+  "manifestVersion": 1,
+  "serverId": "a-new-hope",
+  "name": "SWG: A New Hope",
+  "description": "Pre-CU project in development. [Patch URLs pending operator claim via PR.] [Login host unverified (community convention) \u2014 operator: confirm via PR.]",
+  "era": "Pre-CU",
+  "website": "https://swg-anh.com",
+  "discord": "https://discord.gg/whzdTemFtv",
+  "login": {
+    "host": "login.swg-anh.com",
+    "port": 44453
+  },
+  "client": {
+    "executable": "SWGEmu.exe",
+    "arguments": "",
+    "allowMultiInstance": true
+  },
+  "files": {
+    "baseUrl": "https://patch.example.invalid/a-new-hope/files/",
+    "fileManifestUrl": "https://patch.example.invalid/a-new-hope/files.json"
+  },
+  "auth": {
+    "mode": "none"
+  }
+}

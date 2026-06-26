@@ -1,0 +1,174 @@
+<Window x:Class="SwgLaunchpad.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Star Wars Galaxies — An Empire Unified" Height="700" Width="1000"
+        MinHeight="540" MinWidth="800"
+        Icon="Assets/icon.ico">
+    <Window.Background>
+        <ImageBrush ImageSource="Assets/background.png" Stretch="UniformToFill"/>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header: logo + toolbar -->
+        <Border Grid.Row="0" Background="#B30A0E1A" Padding="16,10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="Assets/logo.png" Height="64" Margin="0,0,14,0"/>
+                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                    <TextBlock Text="STAR WARS GALAXIES" FontSize="20" FontWeight="Bold"
+                               Foreground="{StaticResource GoldBrush}"/>
+                    <TextBlock Text="· AN EMPIRE UNIFIED ·  every galaxy, one launcher"
+                               FontSize="12" Foreground="{StaticResource MutedBrush}"/>
+                </StackPanel>
+                <ComboBox Grid.Column="2" Width="130" VerticalAlignment="Center" Margin="0,0,8,0"
+                          ItemsSource="{Binding EraFilters}" SelectedItem="{Binding SelectedEra}"/>
+                <Button Grid.Column="3" Content="＋ Add server" VerticalAlignment="Center"
+                        Command="{Binding AddServerCommand}"
+                        ToolTip="Add any server by pasting its manifest URL."/>
+                <Button Grid.Column="4" Content="⟳ Refresh" VerticalAlignment="Center"
+                        Command="{Binding RefreshCommand}"/>
+                <Button Grid.Column="5" Content="↑ Updates" VerticalAlignment="Center" Margin="4,0,0,0"
+                        Command="{Binding CheckForUpdatesCommand}"
+                        ToolTip="Check for a newer version of the launcher."/>
+            </Grid>
+        </Border>
+
+        <!-- Base client path -->
+        <Border Grid.Row="1" Background="#990A0E1A" Padding="16,6">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Base SWG client:" VerticalAlignment="Center" Margin="0,0,8,0"
+                           Foreground="{StaticResource MutedBrush}"/>
+                <TextBox Grid.Column="1" Text="{Binding BaseClientPath, UpdateSourceTrigger=PropertyChanged}"
+                         IsReadOnly="True"
+                         ToolTip="A clean Star Wars Galaxies 14.1 installation (An Empire Divided, Total Experience, or Complete Online Adventures discs). Imported once, shared by every server."/>
+                <Button Grid.Column="2" Content="Browse…" Margin="4,0,0,0" Click="OnBrowseBaseClient"
+                        ToolTip="Navigate to your SWG install folder."/>
+                <Button Grid.Column="3" Content="Use this folder" Margin="4,0,0,0"
+                        Command="{Binding SaveBasePathCommand}"/>
+            </Grid>
+        </Border>
+
+        <!-- Server list -->
+        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto" Margin="10,8,10,0">
+            <ItemsControl ItemsSource="{Binding Servers}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Background="#CC141A2A" CornerRadius="6" Padding="14,12" Margin="4"
+                                BorderBrush="#332C3754" BorderThickness="1">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Ellipse Width="10" Height="10" Fill="{Binding StatusDotBrush}"
+                                                 VerticalAlignment="Center" Margin="0,1,8,0"
+                                                 ToolTip="{Binding OnlineText}"/>
+                                        <TextBlock Text="{Binding Name}" FontSize="16" FontWeight="SemiBold"/>
+                                        <Border Background="#FF222B42" CornerRadius="3" Padding="6,1" Margin="8,0,0,0"
+                                                VerticalAlignment="Center">
+                                            <TextBlock Text="{Binding Era}" FontSize="11"
+                                                       Foreground="{StaticResource MutedBrush}"/>
+                                        </Border>
+                                        <Border Background="#FF4A3A14" CornerRadius="3" Padding="6,1" Margin="6,0,0,0"
+                                                VerticalAlignment="Center"
+                                                Visibility="{Binding IsCustom, Converter={StaticResource BoolToVis}}"
+                                                ToolTip="You added this server yourself; it isn't reviewed by r/swg moderators.">
+                                            <TextBlock Text="custom" FontSize="11"
+                                                       Foreground="{StaticResource GoldDimBrush}"/>
+                                        </Border>
+                                        <TextBlock Text="{Binding PopulationText}" FontSize="12" Margin="10,1,0,0"
+                                                   VerticalAlignment="Center"
+                                                   Foreground="{StaticResource OnlineBrush}"/>
+                                    </StackPanel>
+
+                                    <TextBlock Text="{Binding Description}" TextWrapping="Wrap" Margin="18,4,0,2"
+                                               Foreground="{StaticResource MutedBrush}"/>
+                                    <TextBlock Text="{Binding NewsHeadline}" FontSize="12" Margin="18,0,0,2"
+                                               Foreground="{StaticResource GoldDimBrush}" TextTrimming="CharacterEllipsis"/>
+                                    <TextBlock Text="{Binding Status}" FontSize="12" Margin="18,2,0,0"/>
+                                    <ProgressBar Value="{Binding Progress}" Maximum="100" Margin="18,8,0,2"
+                                                 Style="{StaticResource LightsaberProgress}"
+                                                 Visibility="{Binding IsBusy, Converter={StaticResource BoolToVis}}"/>
+
+                                    <!-- footer links (Restoration-style link bar) -->
+                                    <StackPanel Orientation="Horizontal" Margin="18,6,0,0">
+                                        <TextBlock Text="WEBSITE" FontSize="11" Foreground="{StaticResource GoldDimBrush}"
+                                                   Cursor="Hand" TextDecorations="Underline">
+                                            <TextBlock.InputBindings>
+                                                <MouseBinding MouseAction="LeftClick" Command="{Binding WebsiteCommand}"/>
+                                            </TextBlock.InputBindings>
+                                        </TextBlock>
+                                        <TextBlock Text="  |  " FontSize="11" Foreground="{StaticResource MutedBrush}"/>
+                                        <TextBlock Text="DISCORD" FontSize="11" Foreground="{StaticResource GoldDimBrush}"
+                                                   Cursor="Hand" TextDecorations="Underline">
+                                            <TextBlock.InputBindings>
+                                                <MouseBinding MouseAction="LeftClick" Command="{Binding DiscordCommand}"/>
+                                            </TextBlock.InputBindings>
+                                        </TextBlock>
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                        <Button Content="Remove" Command="{Binding RemoveCommand}"
+                                                Visibility="{Binding IsCustom, Converter={StaticResource BoolToVis}}"/>
+                                        <Button Content="{Binding AccountButtonText}" Command="{Binding AccountCommand}"
+                                                Visibility="{Binding RequiresLogin, Converter={StaticResource BoolToVis}}"
+                                                ToolTip="This server uses launcher accounts (stored encrypted on this PC)."/>
+                                        <Button Content="{Binding InstallButtonText}" Command="{Binding InstallOrUpdateCommand}"/>
+                                        <Button Content="Cancel" Command="{Binding CancelCommand}"
+                                                Visibility="{Binding IsBusy, Converter={StaticResource BoolToVis}}"/>
+                                        <Button Content="Verify" Command="{Binding VerifyCommand}"
+                                                ToolTip="Full scan — re-checks every file hash, ignoring the cache."/>
+                                        <Button Content="Settings" Command="{Binding SettingsCommand}"/>
+                                        <Button Content="Folder" Command="{Binding OpenFolderCommand}"/>
+                                        <Button Content="▶ PLAY" Style="{StaticResource PlayButton}"
+                                                Command="{Binding PlayCommand}"/>
+                                    </StackPanel>
+                                    <TextBlock Text="{Binding LoggingIntoText}" FontSize="10" Margin="0,5,2,0"
+                                               HorizontalAlignment="Right"
+                                               Foreground="{StaticResource MutedBrush}"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+        <!-- Status bar -->
+        <Border Grid.Row="3" Background="#CC141A2A" Padding="12,6">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{Binding LauncherVersionLabel}" FontSize="11"
+                           Foreground="{StaticResource MutedBrush}" Margin="0,0,16,0"/>
+                <TextBlock Grid.Column="1" Text="{Binding StatusBar}" Foreground="{StaticResource MutedBrush}" FontSize="12"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

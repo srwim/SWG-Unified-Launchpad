@@ -1,0 +1,27 @@
+{
+  "manifestVersion": 1,
+  "serverId": "restoration-3",
+  "name": "SWG Restoration III",
+  "description": "CU/NGE hybrid imagining what SWG would look like if development had continued \u2014 version 1.0 with a secretive Jedi unlock system. Restoration (Live) galaxy. [Patch URLs pending operator claim via PR.] [Login host unverified (community convention) \u2014 operator: confirm via PR.]",
+  "era": "Hybrid",
+  "website": "https://swgr.org",
+  "discord": "https://discord.gg/swgr",
+  "login": {
+    "host": "login.swgr.org",
+    "port": 44453
+  },
+  "client": {
+    "executable": "SwgClient_r.exe",
+    "arguments": "",
+    "allowMultiInstance": true
+  },
+  "files": {
+    "baseUrl": "https://patch.example.invalid/restoration-3/files/",
+    "fileManifestUrl": "https://patch.example.invalid/restoration-3/files.json"
+  },
+  "auth": {
+    "mode": "launcher",
+    "registerUrl": "https://swgr.org",
+    "passwordResetUrl": "https://swgr.org"
+  }
+}

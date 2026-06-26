@@ -1,0 +1,25 @@
+{
+  "manifestVersion": 1,
+  "serverId": "myswg",
+  "name": "mySWG",
+  "description": "Community Pre-CU project (2003-era focus, 500 skill points, PvP NPCs). [Patch URLs pending operator claim via PR.] [Login host unverified (community convention) \u2014 operator: confirm via PR.]",
+  "era": "Pre-CU",
+  "website": "https://discord.gg/DN7AZ2tztg",
+  "discord": "https://discord.gg/DN7AZ2tztg",
+  "login": {
+    "host": "login.myswg.invalid",
+    "port": 44453
+  },
+  "client": {
+    "executable": "SWGEmu.exe",
+    "arguments": "",
+    "allowMultiInstance": true
+  },
+  "files": {
+    "baseUrl": "https://patch.example.invalid/myswg/files/",
+    "fileManifestUrl": "https://patch.example.invalid/myswg/files.json"
+  },
+  "auth": {
+    "mode": "none"
+  }
+}

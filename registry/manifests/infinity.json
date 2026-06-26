@@ -1,0 +1,26 @@
+{
+  "manifestVersion": 1,
+  "serverId": "infinity",
+  "name": "SWG Infinity",
+  "description": "The largest Pre-CU server: 800+ active weekly players, Jedi unlock, space combat, 34+ professions. Launcher downloads all game files \u2014 no original discs needed. [Patch URLs pending operator claim via PR.] [Login host unverified (community convention) \u2014 operator: confirm via PR.]",
+  "era": "Pre-CU",
+  "website": "https://www.swginfinity.com",
+  "discord": "https://discord.gg/swginfinity",
+  "login": {
+    "host": "login.swginfinity.com",
+    "port": 44453
+  },
+  "client": {
+    "executable": "SWGEmu.exe",
+    "arguments": "",
+    "allowMultiInstance": true
+  },
+  "files": {
+    "baseUrl": "https://patch.example.invalid/infinity/files/",
+    "fileManifestUrl": "https://patch.example.invalid/infinity/files.json"
+  },
+  "auth": {
+    "mode": "none",
+    "registerUrl": "https://www.swginfinity.com/play-now"
+  }
+}

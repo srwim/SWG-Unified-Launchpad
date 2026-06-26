@@ -1,0 +1,114 @@
+{
+  "registryVersion": 1,
+  "updated": "2026-06-25T00:00:00Z",
+  "servers": [
+    {
+      "serverId": "swgemu-finalizer",
+      "name": "SWGEmu — Finalizer",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/swgemu-finalizer.json",
+      "status": "verified"
+    },
+    {
+      "serverId": "awakening",
+      "name": "SWG Awakening",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/awakening.json",
+      "status": "verified"
+    },
+    {
+      "serverId": "stardust",
+      "name": "Stardust 2.1",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/stardust.json",
+      "status": "verified"
+    },
+    {
+      "serverId": "empire-in-flames",
+      "name": "Empire in Flames",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/empire-in-flames.json",
+      "status": "verified"
+    },
+    {
+      "serverId": "infinity",
+      "name": "SWG Infinity",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/infinity.json",
+      "status": "verified"
+    },
+    {
+      "serverId": "reckoning",
+      "name": "SWG Reckoning",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/reckoning.json",
+      "status": "verified"
+    },
+    {
+      "serverId": "sentinels-republic",
+      "name": "SWG Sentinels Republic",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/sentinels-republic.json",
+      "status": "verified"
+    },
+    {
+      "serverId": "sunrunner-2",
+      "name": "Sunrunner II",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/sunrunner-2.json",
+      "status": "verified"
+    },
+    {
+      "serverId": "attack-of-the-clones",
+      "name": "SWG: Attack of the Clones",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/attack-of-the-clones.json",
+      "status": "verified"
+    },
+    {
+      "serverId": "a-new-hope",
+      "name": "SWG: A New Hope",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/a-new-hope.json",
+      "status": "verified"
+    },
+    {
+      "serverId": "flurry",
+      "name": "SWG Flurry",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/flurry.json",
+      "status": "verified"
+    },
+    {
+      "serverId": "swgreturns",
+      "name": "SWGReturns",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/swgreturns.json",
+      "status": "verified"
+    },
+    {
+      "serverId": "eisleyemu",
+      "name": "EisleyEmu (Europe)",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/eisleyemu.json",
+      "status": "verified"
+    },
+    {
+      "serverId": "cuemu",
+      "name": "CUEmu",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/cuemu.json",
+      "status": "verified"
+    },
+    {
+      "serverId": "projectswg",
+      "name": "Project SWG",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/projectswg.json",
+      "status": "verified"
+    },
+    {
+      "serverId": "swg-beyond",
+      "name": "SWG Beyond",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/swg-beyond.json",
+      "status": "verified"
+    },
+    {
+      "serverId": "swg-legends",
+      "name": "SWG Legends",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/swg-legends.json",
+      "status": "verified"
+    },
+    {
+      "serverId": "restoration-3",
+      "name": "SWG Restoration III",
+      "manifestUrl": "https://raw.githubusercontent.com/r-swg/launchpad-registry/main/manifests/restoration-3.json",
+      "status": "verified"
+    }
+  ]
+}

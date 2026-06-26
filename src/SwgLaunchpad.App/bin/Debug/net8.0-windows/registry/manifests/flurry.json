@@ -1,0 +1,25 @@
+{
+  "manifestVersion": 1,
+  "serverId": "flurry",
+  "name": "SWG Flurry",
+  "description": "Pre-CU server with custom content and boosted rates. [Patch URLs pending operator claim via PR.] [Login host unverified (community convention) \u2014 operator: confirm via PR.]",
+  "era": "Pre-CU",
+  "website": "http://www.swgflurry.com",
+  "discord": "https://discord.com/invite/rK9TAPzMnU",
+  "login": {
+    "host": "login.swgflurry.com",
+    "port": 44453
+  },
+  "client": {
+    "executable": "SWGEmu.exe",
+    "arguments": "",
+    "allowMultiInstance": true
+  },
+  "files": {
+    "baseUrl": "https://patch.example.invalid/flurry/files/",
+    "fileManifestUrl": "https://patch.example.invalid/flurry/files.json"
+  },
+  "auth": {
+    "mode": "none"
+  }
+}

@@ -60,7 +60,7 @@ namespace SwgLaunchpad.App {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SwgLaunchpad;component/addserverwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SwgLaunchpad;V1.0.0.0;component/addserverwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AddServerWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

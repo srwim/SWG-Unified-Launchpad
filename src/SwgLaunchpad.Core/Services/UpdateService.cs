@@ -21,8 +21,8 @@ public static class UpdateService
     /// Returns null if the check fails (network error, rate limit, etc.).
     /// </summary>
     public static async Task<UpdateInfo?> CheckAsync(
-        string repoOwner = "r-swg",
-        string repoName  = "swg-unified-launchpad")
+        string repoOwner = "srwim",
+        string repoName  = "SWG-Unified-Launchpad")
     {
         try
         {

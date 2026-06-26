@@ -14,7 +14,8 @@ public static class UpdateService
         string LatestVersion,
         string DownloadUrl,
         string ReleaseNotes,
-        bool UpdateAvailable);
+        bool UpdateAvailable,
+        string? Error = null);
 
     /// <summary>
     /// Checks the GitHub releases API for a newer version.
@@ -32,15 +33,24 @@ public static class UpdateService
             using var response = await Http.GetAsync(
                 $"https://api.github.com/repos/{repoOwner}/{repoName}/releases/latest");
 
-            if (!response.IsSuccessStatusCode) return null;
+            var current = CurrentVersionObject();
+
+            if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+                return new UpdateInfo(current.ToString(3), "", "", "", false,
+                    "No releases published on GitHub yet — you're on the latest build.");
+
+            if (!response.IsSuccessStatusCode)
+                return new UpdateInfo(current.ToString(3), "", "", "", false,
+                    $"GitHub returned HTTP {(int)response.StatusCode}. Try again later.");
 
             var doc = await response.Content.ReadFromJsonAsync<JsonElement>();
             var tag = doc.GetProperty("tag_name").GetString()?.TrimStart('v') ?? "";
             var url = doc.GetProperty("html_url").GetString() ?? "";
             var body = doc.TryGetProperty("body", out var b) ? (b.GetString() ?? "") : "";
 
-            if (!Version.TryParse(tag, out var latest)) return null;
-            var current = CurrentVersionObject();
+            if (!Version.TryParse(tag, out var latest))
+                return new UpdateInfo(current.ToString(3), "", "", "", false,
+                    "Latest release tag couldn't be parsed as a version number.");
 
             return new UpdateInfo(
                 CurrentVersion: current.ToString(3),
@@ -49,9 +59,14 @@ public static class UpdateService
                 ReleaseNotes: body.Length > 400 ? body[..400] + "…" : body,
                 UpdateAvailable: latest > current);
         }
+        catch (TaskCanceledException)
+        {
+            return new UpdateInfo(CurrentVersion(), "", "", "", false,
+                "Update check timed out. Check your connection.");
+        }
         catch
         {
-            return null;
+            return null; // genuine network failure — caller shows generic message
         }
     }
 

@@ -215,7 +215,12 @@ public sealed class MainViewModel : ViewModelBase
         var info = await UpdateService.CheckAsync();
         if (info is null)
         {
-            StatusBar = "Could not reach GitHub to check for updates.";
+            StatusBar = "Could not reach GitHub — check your internet connection.";
+            return;
+        }
+        if (info.Error is not null)
+        {
+            StatusBar = info.Error;
             return;
         }
         if (info.UpdateAvailable)

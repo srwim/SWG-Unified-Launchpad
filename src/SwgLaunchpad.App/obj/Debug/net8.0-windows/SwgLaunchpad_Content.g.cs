@@ -9,15 +9,11 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("registry.json")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("a-new-hope.json")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("attack-of-the-clones.json")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("awakening.json")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("cuemu.json")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("eisleyemu.json")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("empire-in-flames.json")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("flurry.json")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("infinity.json")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("myswg.json")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("projectswg.json")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("reckoning.json")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("restoration-3.json")]

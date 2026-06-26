@@ -1,13 +1,9 @@
 C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.App\bin\Debug\net8.0-windows\registry\registry.json
-C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.App\bin\Debug\net8.0-windows\registry\manifests\a-new-hope.json
 C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.App\bin\Debug\net8.0-windows\registry\manifests\attack-of-the-clones.json
 C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.App\bin\Debug\net8.0-windows\registry\manifests\awakening.json
 C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.App\bin\Debug\net8.0-windows\registry\manifests\cuemu.json
-C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.App\bin\Debug\net8.0-windows\registry\manifests\eisleyemu.json
 C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.App\bin\Debug\net8.0-windows\registry\manifests\empire-in-flames.json
-C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.App\bin\Debug\net8.0-windows\registry\manifests\flurry.json
 C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.App\bin\Debug\net8.0-windows\registry\manifests\infinity.json
-C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.App\bin\Debug\net8.0-windows\registry\manifests\myswg.json
 C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.App\bin\Debug\net8.0-windows\registry\manifests\projectswg.json
 C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.App\bin\Debug\net8.0-windows\registry\manifests\reckoning.json
 C:\Users\saswa\Claude\Projects\SWG Unified Launchpad\src\SwgLaunchpad.App\bin\Debug\net8.0-windows\registry\manifests\restoration-3.json
